@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#chat-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#chat-input {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.date-divider {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin: 15px 0;
+    background: #e0e0e0;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.chat-bubble {
+    max-width: 65%;
+    margin: 8px;
+    padding: 10px 12px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.chat-bubble.user {
+    background-color: #d1ecf1;
+    /* Xanh nhạt */
+    border: 1px solid #17a2b8;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+
+
+.chat-bubble .text {
+    margin-bottom: 4px;
+}
+
+.chat-bubble .time {
+    font-size: 11px;
+    color: #888;
+}

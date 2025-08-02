@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Chat</title>
+    <link rel="stylesheet" href="khach.css">
+</head>
+
+<body>
+    <!-- Giao diện đăng nhập -->
+    <div id="login-screen" class="center-screen">
+        <h2>Nhập tên và lớp</h2>
+        <input type="text" id="name" placeholder="Tên">
+        <input type="text" id="class" placeholder="Lớp">
+        <button id="continue">Tiếp tục</button>
+    </div>
+
+    <!-- Giao diện chính -->
+    <div id="main-screen" style="display: none;">
+        <!-- Nút chat ở góc phải trên -->
+        <div id="chat-button">💬 Chat</div>
+        <img src="menu.png" alt="Menu" style="width: 1000px; max-width: 900px;">
+        <!-- Khung chat -->
+        <div id="chat-box" class="hidden">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Nhập tin nhắn...">
+            <button id="send">📨</button>
+        </div>
+    </div>
+
+    <script type="module" src="khach.js"></script>
+</body>
+
+</html>
